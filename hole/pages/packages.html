@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الباقات - منتجع هول للجولف</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/packages.css">
+</head>
+<body>
+    <nav class="nav-wrapper">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Hole Golf Resort">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="packages.html" class="active"><i class="fas fa-gift"></i> الباقات</a></li>
+                <li><a href="activities.html"><i class="fas fa-golf-ball"></i> الأنشطة</a></li>
+                <li><a href="dining.html"><i class="fas fa-utensils"></i> المطاعم</a></li>
+                <li><a href="spa.html"><i class="fas fa-spa"></i> السبا</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="loginBtn" class="btn btn-primary">تسجيل الدخول</button>
+                <div class="user-menu hidden">
+                    <span class="user-name"></span>
+                    <button class="settings-btn">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>باقاتنا المميزة</h1>
+            <p>اختر من بين مجموعة متنوعة من الباقات المصممة خصيصاً لك</p>
+        </div>
+    </header>
+
+    <section class="packages-grid">
+        <div class="container">
+            <div class="package-filters">
+                <button class="filter-btn active" data-filter="all">جميع الباقات</button>
+                <button class="filter-btn" data-filter="golf">باقات الجولف</button>
+                <button class="filter-btn" data-filter="spa">باقات السبا</button>
+                <button class="filter-btn" data-filter="family">باقات العائلة</button>
+                <button class="filter-btn" data-filter="honeymoon">باقات شهر العسل</button>
+            </div>
+
+            <div class="packages-list">
+                <!-- Golf Packages -->
+                <div class="package-item" data-category="golf">
+                    <img src="https://placehold.co/800x500/1a1a1a/ffffff/png?text=Premium+Golf" alt="باقة الجولف الفاخرة">
+                    <div class="package-content">
+                        <span class="package-tag">جولف</span>
+                        <h3>باقة الجولف الفاخرة</h3>
+                        <p>تشمل إقامة لمدة 3 ليالي مع جولتي جولف وعشاء فاخر</p>
+                        <div class="package-details">
+                            <div class="features">
+                                <span><i class="fas fa-bed"></i> غرفة ديلوكس</span>
+                                <span><i class="fas fa-golf-ball"></i> جولتي جولف</span>
+                                <span><i class="fas fa-utensils"></i> عشاء فاخر</span>
+                            </div>
+                            <div class="price">
+                                <span class="amount">5,000 ريال</span>
+                                <span class="duration">/ 3 ليالي</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">احجز الآن</button>
+                    </div>
+                </div>
+
+                <!-- Spa Packages -->
+                <div class="package-item" data-category="spa">
+                    <img src="https://placehold.co/800x500/1a1a1a/ffffff/png?text=Luxury+Spa" alt="باقة السبا الفاخرة">
+                    <div class="package-content">
+                        <span class="package-tag">سبا</span>
+                        <h3>باقة السبا الفاخرة</h3>
+                        <p>استمتع بإقامة مريحة مع جلسات سبا متنوعة</p>
+                        <div class="package-details">
+                            <div class="features">
+                                <span><i class="fas fa-bed"></i> جناح فاخر</span>
+                                <span><i class="fas fa-spa"></i> 3 جلسات سبا</span>
+                                <span><i class="fas fa-swimming-pool"></i> مسبح خاص</span>
+                            </div>
+                            <div class="price">
+                                <span class="amount">4,500 ريال</span>
+                                <span class="duration">/ ليلتين</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">احجز الآن</button>
+                    </div>
+                </div>
+
+                <!-- Family Packages -->
+                <div class="package-item" data-category="family">
+                    <img src="https://placehold.co/800x500/1a1a1a/ffffff/png?text=Family+Fun" alt="باقة المرح العائلي">
+                    <div class="package-content">
+                        <span class="package-tag">عائلي</span>
+                        <h3>باقة المرح العائلي</h3>
+                        <p>عطلة عائلية مميزة مع أنشطة ترفيهية للجميع</p>
+                        <div class="package-details">
+                            <div class="features">
+                                <span><i class="fas fa-home"></i> جناح عائلي</span>
+                                <span><i class="fas fa-child"></i> نادي للأطفال</span>
+                                <span><i class="fas fa-hamburger"></i> وجبات مجانية للأطفال</span>
+                            </div>
+                            <div class="price">
+                                <span class="amount">6,000 ريال</span>
+                                <span class="duration">/ 4 ليالي</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">احجز الآن</button>
+                    </div>
+                </div>
+
+                <!-- Honeymoon Packages -->
+                <div class="package-item" data-category="honeymoon">
+                    <img src="https://placehold.co/800x500/1a1a1a/ffffff/png?text=Honeymoon+Suite" alt="باقة شهر العسل">
+                    <div class="package-content">
+                        <span class="package-tag">شهر العسل</span>
+                        <h3>باقة شهر العسل الرومانسية</h3>
+                        <p>إقامة رومانسية مع خدمات حصرية للعرسان</p>
+                        <div class="package-details">
+                            <div class="features">
+                                <span><i class="fas fa-glass-cheers"></i> عشاء رومانسي</span>
+                                <span><i class="fas fa-spa"></i> جلسة سبا للزوجين</span>
+                                <span><i class="fas fa-car"></i> خدمة استقبال VIP</span>
+                            </div>
+                            <div class="price">
+                                <span class="amount">7,000 ريال</span>
+                                <span class="duration">/ 5 ليالي</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">احجز الآن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>منتجع هول للجولف</h3>
+                    <p>تجربة فريدة من نوعها في عالم الجولف والترفيه</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="activities.html">الأنشطة</a></li>
+                        <li><a href="packages.html">الباقات</a></li>
+                        <li><a href="dining.html">المطاعم</a></li>
+                        <li><a href="spa.html">السبا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>معلومات الاتصال</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                        <li><i class="fas fa-phone"></i> +966 11 234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@holeresort.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h4>النشرة البريدية</h4>
+                    <p>اشترك للحصول على آخر العروض والأخبار</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" placeholder="البريد الإلكتروني">
+                            <button type="submit" class="btn-subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; 2025 منتجع هول للجولف</p>
+                <div class="footer-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                    <a href="#">خريطة الموقع</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+    <script Package filtering functionality
+        document.addEventListener(, function() 
+            const filterButtons = document.querySelectorAll();
+            const packageItems = document.querySelectorAll()
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const filter = button.getAttribute('data-filter');
+
+                    packageItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            };
+        ;
+    </script>
+</body>
+</html>

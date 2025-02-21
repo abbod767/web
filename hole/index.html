@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجع هول للجولف | الرئيسية</title>
+    <meta name="description" content="منتجع هول للجولف - وجهتك المثالية للاستجمام ولعب الجولف">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div id="loginModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>تسجيل الدخول</h2>
+                            <form id="loginForm">
+                                <div class="form-group">
+                                    <label for="username">اسم المستخدم</label>
+                                    <input type="text" id="username" name="username" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">كلمة المرور</label>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+                            </form>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="pages/packages.html"><i class="fas fa-gift"></i> الباقات</a></li>
+                <li><a href="pages/activities.html"><i class="fas fa-golf-ball"></i> الأنشطة</a></li>
+                <li><a href="pages/dining.html"><i class="fas fa-utensils"></i> المطاعم</a></li>
+                <li><a href="pages/spa.html"><i class="fas fa-spa"></i> السبا</a></li>
+                <li><a href="pages/contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="loginBtn" class="btn btn-primary">تسجيل الدخول</button>
+                <div class="user-menu hidden">
+                    <span class="user-name"></span>
+                    <button class="settings-btn">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" style="background-image: url('https://placehold.co/1600x900/1a1a1a/ffffff/png?text=Hole+in+One+Golf+Resort');">
+        <div class="hero-content">
+            <h1>اكتشف عالم الجولف الفاخر</h1>
+            <p>أفضل ملاعب الجولف وأرقى الإقامات في مكان واحد</p>
+
+            <div class="search-container">
+                <div class="search-tabs">
+                    <a href="#" class="search-tab active">
+                        <i class="fas fa-hotel"></i>
+                        <span>الإقامة</span>
+                    </a>
+                    <a href="#" class="search-tab">
+                        <i class="fas fa-golf-ball"></i>
+                        <span>جولات الجولف</span>
+                    </a>
+                    <a href="#" class="search-tab">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>الباقات</span>
+                    </a>
+                </div>
+
+                <form class="search-form">
+                    <div class="search-input">
+                        <label>الوجهة</label>
+                        <input type="text" placeholder="ادخل اسم المنتجع أو المدينة">
+                        <i class="fas fa-search"></i>
+                    </div>
+
+                    <div class="search-input">
+                        <label>تاريخ الوصول</label>
+                        <input type="date" class="date-picker">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+
+                    <div class="search-input">
+                        <label>تاريخ المغادرة</label>
+                        <input type="date" class="date-picker">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+
+                    <div class="search-input">
+                        <label>الضيوف والغرف</label>
+                        <div class="guest-picker">
+                            <span>2 بالغين، 1 غرفة</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                        بحث
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <section class="category-nav">
+        <div class="container">
+            <div class="category-list">
+                <a href="pages/activities.html#golf" class="category-item active">
+                    <img src="https://placehold.co/100x100/1a1a1a/ffffff/png?text=Golf" alt="Golf">
+                    <span>جولف</span>
+                </a>
+                <a href="pages/activities.html#beach" class="category-item">
+                    <img src="https://placehold.co/100x100/1a1a1a/ffffff/png?text=Beach" alt="Beach">
+                    <span>شاطئ</span>
+                </a>
+                <a href="pages/spa.html" class="category-item">
+                    <img src="https://placehold.co/100x100/1a1a1a/ffffff/png?text=Spa" alt="Spa">
+                    <span>سبا</span>
+                </a>
+                <a href="pages/activities.html#family" class="category-item">
+                    <img src="https://placehold.co/100x100/1a1a1a/ffffff/png?text=Family" alt="Family">
+                    <span>عائلي</span>
+                </a>
+                <a href="pages/activities.html#business" class="category-item">
+                    <img src="https://placehold.co/100x100/1a1a1a/ffffff/png?text=Business" alt="Business">
+                    <span>أعمال</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discover Categories -->
+    <section class="discover-categories">
+        <div class="container">
+            <h2>اكتشف إقامتك المثالية</h2>
+            <div class="category-grid">
+                <a href="pages/packages.html#golf" class="category-card">
+                    <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Golf+Package" alt="Golf Package">
+                    <span>باقة الجولف</span>
+                </a>
+                <a href="pages/packages.html#spa" class="category-card">
+                    <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Spa+Package" alt="Spa Package">
+                    <span>باقة السبا</span>
+                </a>
+                <a href="pages/packages.html#family" class="category-card">
+                    <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Family+Package" alt="Family Package">
+                    <span>باقة العائلة</span>
+                </a>
+                <a href="pages/packages.html#luxury" class="category-card">
+                    <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Luxury+Package" alt="Luxury Package">
+                    <span>باقة الفخامة</span>
+                </a>
+                <a href="pages/packages.html#romance" class="category-card">
+                    <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Romance+Package" alt="Romance Package">
+                    <span>باقة الرومانسية</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="text-center">ما يميزنا</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-golf-ball"></i>
+                    <h3>ملاعب عالمية</h3>
+                    <p>ملاعب جولف مصممة على أعلى المستويات العالمية</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-hotel"></i>
+                    <h3>إقامة فاخرة</h3>
+                    <p>غرف وأجنحة فاخرة مع إطلالات خلابة</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>مطاعم راقية</h3>
+                    <p>تجربة طعام متميزة مع أشهى المأكولات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="popular-destinations">
+        <div class="container">
+            <h2>استكشف الوجهات المميزة</h2>
+            <p class="section-subtitle">متوسط الأسعار بناءً على الشهر الحالي</p>
+            
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Riyadh" alt="Riyadh">
+                    <div class="destination-info">
+                        <h3>الرياض</h3>
+                        <p>المملكة العربية السعودية</p>
+                        <div class="price">
+                            <span class="amount">899</span>
+                            <span class="currency">ر.س</span>
+                            <span class="duration">/ لليلة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Jeddah" alt="Jeddah">
+                    <div class="destination-info">
+                        <h3>جدة</h3>
+                        <p>المملكة العربية السعودية</p>
+                        <div class="price">
+                            <span class="amount">750</span>
+                            <span class="currency">ر.س</span>
+                            <span class="duration">/ لليلة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Dammam" alt="Dammam">
+                    <div class="destination-info">
+                        <h3>الدمام</h3>
+                        <p>المملكة العربية السعودية</p>
+                        <div class="price">
+                            <span class="amount">650</span>
+                            <span class="currency">ر.س</span>
+                            <span class="duration">/ لليلة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Last Minute Deals -->
+    <section class="last-minute-deals">
+        <div class="container">
+            <div class="section-header">
+                <h2>عروض اللحظة الأخيرة</h2>
+                <a href="#" class="view-all">عرض جميع العروض</a>
+            </div>
+            
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Last+Minute+Deal+1" alt="Last Minute Deal 1">
+                        <span class="discount">خصم 20%</span>
+                    </div>
+                    <div class="deal-content">
+                        <div class="rating">
+                            <span class="score">9.2</span>
+                            <span class="rating-text">ممتاز</span>
+                            <span class="reviews">(120 تقييم)</span>
+                        </div>
+                        <h3>عطلة نهاية الأسبوع</h3>
+                        <p class="location">الرياض، المملكة العربية السعودية</p>
+                        <div class="price-info">
+                            <div class="price">
+                                <span class="original">1,200 ر.س</span>
+                                <span class="current">960 ر.س</span>
+                            </div>
+                            <span class="per-night">لليلة الواحدة</span>
+                        </div>
+                        <p class="includes">شامل الضرائب والرسوم</p>
+                    </div>
+                </div>
+                <!-- Add more deal cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Preview -->
+    <section class="packages-preview">
+        <div class="container">
+            <h2 class="text-center">باقاتنا المميزة</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Golf+Package" alt="Golf Package">
+                    <h3>باقة الجولف</h3>
+                    <p>استمتع بتجربة جولف كاملة مع إقامة فاخرة</p>
+                    <a href="pages/packages.html#golf" class="btn btn-secondary">المزيد من التفاصيل</a>
+                </div>
+                <div class="package-card">
+                    <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Spa+Package" alt="Spa Package">
+                    <h3>باقة السبا</h3>
+                    <p>استمتع بتجربة سبا فاخرة مع إقامة مريحة</p>
+                    <a href="pages/packages.html#spa" class="btn btn-secondary">المزيد من التفاصيل</a>
+                </div>
+                <div class="package-card">
+                    <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Family+Package" alt="Family Package">
+                    <h3>باقة العائلة</h3>
+                    <p>استمتع بتجربة عائلية ممتعة مع إقامة فاخرة</p>
+                    <a href="pages/packages.html#family" class="btn btn-secondary">المزيد من التفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download -->
+    <section class="app-download">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-info">
+                    <h2>حمل تطبيقنا</h2>
+                    <p>احجز بسهولة واحصل على عروض حصرية</p>
+                    <div class="qr-code">
+                        <img src="https://placehold.co/200x200/1a1a1a/ffffff/png?text=QR+Code" alt="QR Code">
+                    </div>
+                    <div class="app-buttons">
+                        <a href="#" class="app-button">
+                            <img src="https://placehold.co/150x50/1a1a1a/ffffff/png?text=App+Store" alt="App Store">
+                        </a>
+                        <a href="#" class="app-button">
+                            <img src="https://placehold.co/150x50/1a1a1a/ffffff/png?text=Google+Play" alt="Google Play">
+                        </a>
+                    </div>
+                </div>
+                <div class="app-preview">
+                    <img src="https://placehold.co/300x600/1a1a1a/ffffff/png?text=App+Preview" alt="App Preview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>منتجع هول للجولف</h3>
+                    <p>تجربة فريدة من نوعها في عالم الجولف والترفيه</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="activities.html">الأنشطة</a></li>
+                        <li><a href="packages.html">الباقات</a></li>
+                        <li><a href="dining.html">المطاعم</a></li>
+                        <li><a href="spa.html">السبا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>معلومات الاتصال</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                        <li><i class="fas fa-phone"></i> +966 11 234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@holeresort.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h4>النشرة البريدية</h4>
+                    <p>اشترك للحصول على آخر العروض والأخبار</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" placeholder="البريد الإلكتروني">
+                            <button type="submit" class="btn-subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; 2025 منتجع هول للجولف</p>
+                <div class="footer-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                    <a href="#">خريطة الموقع</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    
+
+    <script src="../js/auth.js"></script>
+
+</body>
+</html>

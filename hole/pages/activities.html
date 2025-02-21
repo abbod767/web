@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأنشطة - منتجع هول للجولف</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/activities.css">
+</head>
+<body>
+    <nav class="nav-wrapper">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Hole Golf Resort">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="packages.html"><i class="fas fa-gift"></i> الباقات</a></li>
+                <li><a href="activities.html" class="active"><i class="fas fa-golf-ball"></i> الأنشطة</a></li>
+                <li><a href="dining.html"><i class="fas fa-utensils"></i> المطاعم</a></li>
+                <li><a href="spa.html"><i class="fas fa-spa"></i> السبا</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="loginBtn" class="btn btn-primary">تسجيل الدخول</button>
+                <div class="user-menu hidden">
+                    <span class="user-name"></span>
+                    <button class="settings-btn">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>أنشطة لا تُنسى</h1>
+            <p>اكتشف مجموعة متنوعة من الأنشطة الترفيهية والرياضية</p>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section class="activities-showcase">
+            <div class="container">
+                <div class="activities-grid">
+                    <!-- Golf Activities -->
+                    <div class="activity-card featured">
+                        <img src="https://placehold.co/1200x800/1a1a1a/ffffff/png?text=Golf+Course" alt="ملعب الجولف">
+                        <div class="activity-content">
+                            <h2>ملعب الجولف العالمي</h2>
+                            <p>استمتع بتجربة لعب الجولف على ملعب مصمم وفق أعلى المعايير العالمية</p>
+                            <div class="activity-features">
+                                <span><i class="fas fa-clock"></i> متاح 24/7</span>
+                                <span><i class="fas fa-user-friends"></i> دروس خاصة متوفرة</span>
+                                <span><i class="fas fa-store"></i> متجر معدات</span>
+                            </div>
+                            <button class="btn btn-primary">احجز موعداً</button>
+                        </div>
+                    </div>
+
+                    <!-- Other Activities -->
+                    <div class="activity-card">
+                        <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Swimming" alt="المسبح">
+                        <div class="activity-content">
+                            <h3>المسبح الفاخر</h3>
+                            <p>مسبح داخلي وخارجي مع خدمات متميزة</p>
+                            <div class="activity-features">
+                                <span><i class="fas fa-swimming-pool"></i> مسبح مدفأ</span>
+                                <span><i class="fas fa-umbrella-beach"></i> خدمة المنشفة</span>
+                            </div>
+                            <button class="btn btn-secondary">المزيد من التفاصيل</button>
+                        </div>
+                    </div>
+
+                    <div class="activity-card">
+                        <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Tennis" alt="التنس">
+                        <div class="activity-content">
+                            <h3>ملاعب التنس</h3>
+                            <p>ملاعب تنس احترافية مع مدربين معتمدين</p>
+                            <div class="activity-features">
+                                <span><i class="fas fa-tennis-ball"></i> 4 ملاعب</span>
+                                <span><i class="fas fa-user-tie"></i> مدربون محترفون</span>
+                            </div>
+                            <button class="btn btn-secondary">احجز ملعباً</button>
+                        </div>
+                    </div>
+
+                    <div class="activity-card">
+                        <img src="https://placehold.co/800x600/1a1a1a/ffffff/png?text=Kids+Club" alt="نادي الأطفال">
+                        <div class="activity-content">
+                            <h3>نادي الأطفال</h3>
+                            <p>أنشطة ترفيهية وتعليمية للأطفال</p>
+                            <div class="activity-features">
+                                <span><i class="fas fa-child"></i> من 4-12 سنة</span>
+                                <span><i class="fas fa-clock"></i> 9 صباحاً - 6 مساءً</span>
+                            </div>
+                            <button class="btn btn-secondary">اكتشف البرامج</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="activity-schedule">
+            <div class="container">
+                <h2>جدول الأنشطة الأسبوعي</h2>
+                <div class="schedule-slider">
+                    <div class="schedule-day">
+                        <h3>السبت</h3>
+                        <ul class="schedule-list">
+                            <li>
+                                <span class="time">09:00</span>
+                                <span class="activity">درس جولف للمبتدئين</span>
+                            </li>
+                            <li>
+                                <span class="time">11:00</span>
+                                <span class="activity">يوغا في الحديقة</span>
+                            </li>
+                            <li>
+                                <span class="time">16:00</span>
+                                <span class="activity">بطولة التنس</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Add more days here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>احجز نشاطك المفضل الآن</h2>
+                    <p>استمتع بتجربة فريدة مع أفضل المدربين والمرافق</p>
+                    <button class="btn btn-primary btn-large">احجز الآن</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>تسجيل الدخول</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">اسم المستخدم</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>منتجع هول للجولف</h3>
+                    <p>تجربة فريدة من نوعها في عالم الجولف والترفيه</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="activities.html">الأنشطة</a></li>
+                        <li><a href="packages.html">الباقات</a></li>
+                        <li><a href="dining.html">المطاعم</a></li>
+                        <li><a href="spa.html">السبا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>معلومات الاتصال</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                        <li><i class="fas fa-phone"></i> +966 11 234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@holeresort.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h4>النشرة البريدية</h4>
+                    <p>اشترك للحصول على آخر العروض والأخبار</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" placeholder="البريد الإلكتروني">
+                            <button type="submit" class="btn-subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; 2025 منتجع هول للجولف</p>
+                <div class="footer-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                    <a href="#">خريطة الموقع</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>
